@@ -1,14 +1,19 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main className="container">
-      
+
       {/* NAVBAR */}
       <nav className="navbar">
-        <h1 className="logo">DOPAMINE</h1>
+        <Link href="/" className="logo">
+          DOPAMINE
+        </Link>
+
         <div className="nav-icons">
-          <span>🔍</span>
-          <span>🛍️</span>
-          <span>👤</span>
+          <Link href="/search">🔍</Link>
+          <Link href="/cart">🛍️</Link>
+          <Link href="/profile">👤</Link>
         </div>
       </nav>
 
@@ -22,53 +27,86 @@ export default function Home() {
       <section className="section">
         <div className="section-header">
           <h2>Produk Baru</h2>
-          <div>← →</div>
+
+          <div className="arrow-links">
+            <Link href="/previous">←</Link>
+            <Link href="/next">→</Link>
+          </div>
         </div>
 
         <div className="products">
-          <img src="/images/baju1.png" />
-          <img src="/images/baju2.png" />
-          <img src="/images/baju3.png" />
+          <Link href="/produk/baju1">
+            <img src="/images/baju1.png" alt="baju1" />
+          </Link>
+
+          <Link href="/produk/baju2">
+            <img src="/images/baju2.png" alt="baju2" />
+          </Link>
+
+          <Link href="/produk/baju3">
+            <img src="/images/baju3.png" alt="baju3" />
+          </Link>
         </div>
 
-        <p className="more">Klik untuk lanjut</p>
+        <Link href="/produk" className="more">
+          Klik untuk lanjut
+        </Link>
       </section>
 
       {/* BRAND MESSAGE */}
       <section className="brand">
-        <h2>DOPAMINE</h2>
+        <Link href="/" className="brand-logo">
+          DOPAMINE
+        </Link>
+
         <h3>Because Feeling Good Matters.</h3>
         <p>Run with comfort, move with confidence.</p>
 
         <div className="categories">
-          <span>Baju</span>
-          <span>Celana</span>
-          <span>Topi</span>
-          <span>Kaos Kaki</span>
-          <span>Running Belt</span>
-          <span>Jersey</span>
+          <Link href="/kategori/baju">Baju</Link>
+          <Link href="/kategori/celana">Celana</Link>
+          <Link href="/kategori/topi">Topi</Link>
+          <Link href="/kategori/kaoskaki">Kaos Kaki</Link>
+          <Link href="/kategori/runningbelt">Running Belt</Link>
+          <Link href="/kategori/jersey">Jersey</Link>
         </div>
       </section>
 
       {/* KOLEKSI */}
       <section className="section">
         <h2>Koleksi</h2>
+
         <div className="grid">
-          <img src="/images/run.jpg" className="big" />
-          <img src="/images/detail.jpg" />
-          <img src="/images/shorts.png" />
-          <img src="/images/topi.jpg" />
-          <div className="overlay">Click for more</div>
+          <Link href="/koleksi/run">
+            <img src="/images/run.jpg" className="big" alt="run" />
+          </Link>
+
+          <Link href="/koleksi/detail">
+            <img src="/images/detail.jpg" alt="detail" />
+          </Link>
+
+          <Link href="/koleksi/shorts">
+            <img src="/images/shorts.png" alt="shorts" />
+          </Link>
+
+          <Link href="/koleksi/topi">
+            <img src="/images/topi.jpg" alt="topi" />
+          </Link>
+
+          <Link href="/koleksi" className="overlay">
+            Click for more
+          </Link>
         </div>
       </section>
 
       {/* FOOTER */}
       <footer className="footer">
+
         <div className="socials">
-          <span>🛒</span>
-          <span>📸</span>
-          <span>🎵</span>
-          <span>✳️</span>
+          <Link href="/shop">🛒</Link>
+          <Link href="https://instagram.com">📸</Link>
+          <Link href="https://tiktok.com">🎵</Link>
+          <Link href="/featured">✳️</Link>
         </div>
 
         <p className="desc">
@@ -77,12 +115,15 @@ export default function Home() {
         </p>
 
         <div className="links">
-          <span>FAQ</span>
-          <span>Lokasi</span>
-          <span>Hubungi Kami</span>
+          <Link href="/faq">FAQ</Link>
+          <Link href="/lokasi">Lokasi</Link>
+          <Link href="/hubungi-kami">Hubungi Kami</Link>
         </div>
 
-        <h1 className="logo-footer">DOPAMINE</h1>
+        <Link href="/" className="logo-footer">
+          DOPAMINE
+        </Link>
+
       </footer>
 
     </main>

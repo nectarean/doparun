@@ -1,0 +1,100 @@
+/* app/globals.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* PAGE */
+.faq-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #020401;
+}
+
+/* NAVBAR */
+.navbar {
+  height: 105px;
+  background: #f3efe9;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 42px;
+}
+
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-wrap h1 {
+  font-size: 40px;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: -1px;
+  color: black;
+}
+
+.logo-icon {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
+
+.nav-icons svg {
+  width: 46px;
+  height: 46px;
+  color: black;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 105px);
+  background: #020401;
+}
+
+/* LEFT TEXT */
+.left-text {
+  position: absolute;
+  top: 85px;
+  left: 74px;
+}
+
+.left-text h2 {
+  color: #f4f1ea;
+  font-size: 64px;
+  line-height: 1.45;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* BIG LOGO */
+.big-logo {
+  position: absolute;
+  right: 40px;
+  top: 42%;
+  transform: translateY(-50%);
+}
+
+.big-logo img {
+  width: 640px;
+  object-fit: contain;
+}

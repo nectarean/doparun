@@ -77,7 +77,7 @@ export default function Home() {
         </p>
 
         <div className="links">
-          <span>FAQ</span>
+          <a href='Login'>FAQ</a>
           <span>Lokasi</span>
           <span>Hubungi Kami</span>
         </div>
